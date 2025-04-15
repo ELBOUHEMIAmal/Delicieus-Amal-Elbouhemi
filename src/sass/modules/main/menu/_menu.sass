@@ -1,0 +1,34 @@
+.ourmenu
+    @include display(center)  
+    flex-direction: column 
+    row-gap: 5vh    
+    width: 100%
+    height: 80vh
+    .border-why
+        border-radius: 20px
+        background: #fff7eb
+        padding: 5px 15px
+        width: fit-content
+        color: #ffb03b
+        font-weight: 500
+    .ourRestaurant
+        h2
+            font-family: "Pacifico", cursive
+            span
+                color: #ffb03b
+    .categorie
+        ul
+            @include display(center)
+            gap: 5vw
+            li
+                list-style: none
+    .plats
+        @include display(center)
+        flex-wrap: wrap
+        gap: 5vw
+        .plat
+            @include display(center)
+            img
+                width: 50px
+            
+            

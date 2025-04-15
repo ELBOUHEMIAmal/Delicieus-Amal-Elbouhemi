@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Pacifico&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top d-flex justify-content-lg-evenly align-content-center ">
+            <div class="logo">
+                <h2>Delicieus</h2>
+            </div>
+            <div class="list">
+                <ul class=" d-flex  align-content-center gap-5">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#specials">Specials</a>
+                    </li>
+                    <li>
+                        <a href="#Event">Event</a>
+                    </li>
+                    <li>
+                        <a href="#chefs">Chefs</a>
+                    </li>
+                    <li>
+                        <a href="#gallery">Gallery</a>
+                    </li>
+                    <li class="dropdown"><a href="#"><span>Dropdown</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#" class="text-black">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#" class="text-black"><span>Deep Dropdown</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#" class="text-black">Deep Dropdown 1</a></li>
+                                    <li><a href="#" class="text-black">Deep Dropdown 2</a></li>
+                                    <li><a href="#" class="text-black">Deep Dropdown 3</a></li>
+                                    <li><a href="#" class="text-black">Deep Dropdown 4</a></li>
+                                    <li><a href="#" class="text-black">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="text-black">Dropdown 2</a></li>
+                            <li><a href="#" class="text-black">Dropdown 3</a></li>
+                            <li><a href="#" class="text-black">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="back-img">
+            <div class="opacity"></div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./public/images/img/slide/slide-1.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block ">
+                            <h2><span>Delicious</span> Restaurant</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, odit repudiandae.
+                                Architecto, autem suscipit ab quae tenetur rem eveniet laborum.
+                            </p>
+                        </div>
+                        <div class="buttons btn-get-started">
+                            <a href="#menu">Our Menu</a>
+                            <a href="#bookAtable">Book A Table</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./public/images/img/slide/slide-2.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>At vero eos et accusamus</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis fugit, repellendus quasi
+                                harum fugiat praesentium libero perspiciatis magnam laborum labore.</p>
+                        </div>
+                        <div class="buttons btn-get-started">
+                            <a href="#menu">Our Menu</a>
+                            <a href="#bookAtable">Book A Table</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <img src="./public/images/img/slide/slide-3.jpg" class="d-block" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Temporibus autem quibusdam</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, iusto dicta aut illum
+                                tempora sint quaerat repellat nihil minima optio?</p>
+                        </div>
+                        <div class="buttons btn-get-started">
+                            <a href="#menu">Our Menu</a>
+                            <a href="#bookAtable">Book A Table</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="aboutus">
+            <div class="video">
+                <a href="https://youtu.be/kRCH8kD1GD0?si=q_rH7GCB-Jyg-E59" class="video-position">
+                    <img src="./public/images/img/about.jpg" alt="" width="600">
+                    <i class="bi bi-play-circle-fill play-button"></i>
+                </a>
+            </div>
+            <div class="disc-video">
+                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <p><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt
+                    ut labore et dolore magna aliqua.</em></p>
+                <i class="bi bi-check2-all fs-3 icon"></i>
+                <span>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+                <br>
+                <i class="bi bi-check2-all fs-3   icon"></i>
+                <span>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+                <br>
+                <i class="bi bi-check2-all fs-3 icon"></i>
+                <span>
+                    Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Illo voluptates mollitia voluptatem? Maiores soluta fugit ad,
+                    dolorem consectetur repellendus.</p>
+            </div>
+
+        </section>
+        <section class="whyUs">
+            <div class="border-why">WHY US</div>
+            <div class="ourRestaurant"><h2>Why Choose <span>Our Restaurant</span></h2></div>
+            <div class="content">
+                <div>
+                    <h3>01</h3>
+                    <h4>Lorem ipsum </h4>
+                    <p>
+                        Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
+                    </p>
+                </div>
+                <div>
+                    <h3>02</h3>
+                    <h4>Lorem ipsum </h4>
+                    <p>
+                        Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
+                    </p>
+                </div>
+                <div>
+                    <h3>03</h3>
+                    <h4>Lorem ipsum </h4>
+                    <p>
+                        Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="menu" class="ourmenu">
+            <div class="border-why">MENU</div>
+            <div class="ourRestaurant"><h2>Why Choose <span>Our Restaurant</span></h2></div>
+            <div class="categorie">
+                <ul>
+                    <li>All</li>
+                    <li>Starters</li>
+                    <li>Salads</li>
+                    <li>Specialty</li>
+                </ul>
+            </div>
+            <div class="plats">
+                <div class="plat">
+                    <img src="./public/images/img/menu/caesar.jpg" alt="" width="60">
+                    <div class="prices">
+                        <h4>Caesar</h4>
+                        <span>$5.95</span>
+                    </div>
+                    <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/cake.jpg" alt="" width="60">
+                    <div>
+                        <h4>Crab Cake</h4>
+                        <span>$7.97</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/greek-salad.jpg" alt="" width="60">
+                    <div>
+                        <h4>greek salad</h4>
+                        <span>$9.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/lobster-bisque.jpg" alt="" width="60">
+                    <div>
+                        <h4>Lobster Bisque</h4>
+                        <span>$5.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/lobster-roll.jpg" alt="" width="60">
+                    <div>
+                        <h4>Lobster Roll</h4>
+                        <span>$12.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/mozzarella.jpg" alt="" width="60">
+                    <div>
+                        <h4>Mozzarella</h4>
+                        <span>$5.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/spinach-salad.jpg" alt="" width="60">
+                    <div>
+                        <h4>spinach salad</h4>
+                        <span>$9.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/tuscan-grilled.jpg" alt="" width="60">
+                    <div>
+                        <h4>tuscan grilled</h4>
+                        <span>$5.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <img src="./public/images/img/menu/bread-barrel.jpg" alt="" width="60">
+                    <div>
+                        <h4>tuscan grilled</h4>
+                        <span>$5.95</span>
+                        <div>Lorem, ipsum, dolor, sit, amet, consectetur </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</html>

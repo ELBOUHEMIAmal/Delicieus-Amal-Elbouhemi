@@ -1,0 +1,110 @@
+// header
+@mixin display($justifyCenter)
+    display: flex
+    justify-content: $justifyCenter
+    align-items: center
+     
+    
+.navbar
+    background-color: #1e160ddb
+    z-index: 99999
+    padding-top: 15px
+    .logo
+        z-index: 99999
+
+        h2
+            color: #ffffff
+            font-family: "Pacifico", cursive
+
+    .list
+        z-index: 99999
+
+        ul
+            li
+                list-style: none
+                a
+                    text-decoration: none
+                    color: white
+                    &:focus
+                        color: #ffb03b
+            .dropdown
+                position: relative
+                ul
+                    display: none
+                    .dropdown
+                        ul
+                            display: none
+                    .dropdown:hover>ul
+                        display: block
+                        position: absolute
+                        right: 25vh
+                        background-color: white
+                        padding: 12px 0 12px 12px
+                        width: 12vw
+                        border-radius: 5px
+                        
+            .dropdown:hover>ul
+                display: block
+                position: absolute
+                top: 5vh
+                background-color: white
+                padding: 12px 0 12px 12px
+                width: 12vw
+                border-radius: 5px
+                box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset
+                
+
+.back-img
+    .slide
+        .carousel-control-prev, .carousel-control-next
+            z-index: 9999
+
+        .carousel-inner
+
+            .carousel-item
+                .d-block
+                    width: 100%
+                    height: 100vh
+                    object-fit: cover
+                    position: relative
+                .carousel-caption
+                    z-index: 9999
+                    position: absolute
+                    top: 40vh
+                    left: 34vw
+                    transform: translate(10px, 10px)
+                    width: 33vw
+                    p
+                        text-align: start
+                    h2
+                        font-family: "Pacifico", cursive
+                        span
+                            color: #ffb03b
+                .buttons
+                    z-index: 9999
+                    position: absolute
+                    top: 70vh
+                    left: 40vw
+                    transform: translate(10px, 10px)
+                    width: 33vw
+                    a
+                        text-decoration: none
+                        color: white
+                        border: 1px solid #ffb03b
+                        border-radius: 25px
+                        padding: 10px 25px
+                        &:focus
+                            background-color: #ffb03b
+        .carousel-indicators
+            z-index: 9999
+            position: absolute
+            bottom: 5vh
+
+    .opacity
+        background: #000000
+        width: 100%
+        height: 100vh
+        opacity: 0.5
+        position: absolute
+        top: 0
+        z-index: 9999

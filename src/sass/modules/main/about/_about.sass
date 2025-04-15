@@ -1,0 +1,31 @@
+.aboutus
+    @include display(center)
+    background: #fffaf3
+    width: 100%
+    height: 80vh
+    gap: 20px
+.video-position
+    position: relative
+    display: inline-block
+    cursor: pointer
+    text-decoration: none
+    .play-button
+        @include display(center)
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        font-size: 75px
+        color: #ffb03b
+        border-radius: 50% 
+        background-color: white
+        cursor: pointer
+        transition: background-color 0.3s ease
+.disc-video
+    width: 700px
+    height: 64vh
+    h3
+        font-family: "Pacifico", cursive
+    i
+        color: #ffb03b
+
