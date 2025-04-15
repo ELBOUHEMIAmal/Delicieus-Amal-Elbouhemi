@@ -12063,7 +12063,7 @@ section {
   color: white;
 }
 
-.ourmenu, .ourSpecials, .book-a-table, .gallerys {
+.ourmenu, .ourSpecials, .book-a-table, .gallerys, .our-chefs {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12072,7 +12072,7 @@ section {
   width: 100%;
   height: 80vh;
 }
-.ourmenu .border-why, .ourSpecials .border-why, .book-a-table .border-why, .gallerys .border-why {
+.ourmenu .border-why, .ourSpecials .border-why, .book-a-table .border-why, .gallerys .border-why, .our-chefs .border-why {
   border-radius: 20px;
   background: #fff7eb;
   padding: 5px 15px;
@@ -12080,111 +12080,111 @@ section {
   color: #ffb03b;
   font-weight: 500;
 }
-.ourmenu .ourRestaurant h2, .ourmenu .ourRestaurant .h2, .ourSpecials .ourRestaurant h2, .ourSpecials .ourRestaurant .h2, .book-a-table .ourRestaurant h2, .book-a-table .ourRestaurant .h2, .gallerys .ourRestaurant h2, .gallerys .ourRestaurant .h2 {
+.ourmenu .ourRestaurant h2, .ourmenu .ourRestaurant .h2, .ourSpecials .ourRestaurant h2, .ourSpecials .ourRestaurant .h2, .book-a-table .ourRestaurant h2, .book-a-table .ourRestaurant .h2, .gallerys .ourRestaurant h2, .gallerys .ourRestaurant .h2, .our-chefs .ourRestaurant h2, .our-chefs .ourRestaurant .h2 {
   font-family: "Pacifico", cursive;
 }
-.ourmenu .ourRestaurant h2 span, .ourmenu .ourRestaurant .h2 span, .ourSpecials .ourRestaurant h2 span, .ourSpecials .ourRestaurant .h2 span, .book-a-table .ourRestaurant h2 span, .book-a-table .ourRestaurant .h2 span, .gallerys .ourRestaurant h2 span, .gallerys .ourRestaurant .h2 span {
+.ourmenu .ourRestaurant h2 span, .ourmenu .ourRestaurant .h2 span, .ourSpecials .ourRestaurant h2 span, .ourSpecials .ourRestaurant .h2 span, .book-a-table .ourRestaurant h2 span, .book-a-table .ourRestaurant .h2 span, .gallerys .ourRestaurant h2 span, .gallerys .ourRestaurant .h2 span, .our-chefs .ourRestaurant h2 span, .our-chefs .ourRestaurant .h2 span {
   color: #ffb03b;
 }
-.ourmenu .categorie ul, .ourSpecials .categorie ul, .book-a-table .categorie ul, .gallerys .categorie ul {
+.ourmenu .categorie ul, .ourSpecials .categorie ul, .book-a-table .categorie ul, .gallerys .categorie ul, .our-chefs .categorie ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3vw;
 }
-.ourmenu .categorie ul li, .ourSpecials .categorie ul li, .book-a-table .categorie ul li, .gallerys .categorie ul li {
+.ourmenu .categorie ul li, .ourSpecials .categorie ul li, .book-a-table .categorie ul li, .gallerys .categorie ul li, .our-chefs .categorie ul li {
   list-style: none;
 }
-.ourmenu .categorie ul li:hover, .ourSpecials .categorie ul li:hover, .book-a-table .categorie ul li:hover, .gallerys .categorie ul li:hover {
+.ourmenu .categorie ul li:hover, .ourSpecials .categorie ul li:hover, .book-a-table .categorie ul li:hover, .gallerys .categorie ul li:hover, .our-chefs .categorie ul li:hover {
   color: #ffb03b;
 }
-.ourmenu .plats, .ourSpecials .plats, .book-a-table .plats, .gallerys .plats {
+.ourmenu .plats, .ourSpecials .plats, .book-a-table .plats, .gallerys .plats, .our-chefs .plats {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 3vw;
 }
-.ourmenu .plats .prices, .ourSpecials .plats .prices, .book-a-table .plats .prices, .gallerys .plats .prices {
+.ourmenu .plats .prices, .ourSpecials .plats .prices, .book-a-table .plats .prices, .gallerys .plats .prices, .our-chefs .plats .prices {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ourmenu .plats .prices .img, .ourSpecials .plats .prices .img, .book-a-table .plats .prices .img, .gallerys .plats .prices .img {
+.ourmenu .plats .prices .img, .ourSpecials .plats .prices .img, .book-a-table .plats .prices .img, .gallerys .plats .prices .img, .our-chefs .plats .prices .img {
   width: 60px;
   border-radius: 50%;
   border: 5px solid #f9f9f9;
 }
-.ourmenu .plats .prices div .plat, .ourSpecials .plats .prices div .plat, .book-a-table .plats .prices div .plat, .gallerys .plats .prices div .plat {
+.ourmenu .plats .prices div .plat, .ourSpecials .plats .prices div .plat, .book-a-table .plats .prices div .plat, .gallerys .plats .prices div .plat, .our-chefs .plats .prices div .plat {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ourmenu .plats .prices div .plat h4:after, .ourmenu .plats .prices div .plat .h4:after, .ourSpecials .plats .prices div .plat h4:after, .ourSpecials .plats .prices div .plat .h4:after, .book-a-table .plats .prices div .plat h4:after, .book-a-table .plats .prices div .plat .h4:after, .gallerys .plats .prices div .plat h4:after, .gallerys .plats .prices div .plat .h4:after {
+.ourmenu .plats .prices div .plat h4:after, .ourmenu .plats .prices div .plat .h4:after, .ourSpecials .plats .prices div .plat h4:after, .ourSpecials .plats .prices div .plat .h4:after, .book-a-table .plats .prices div .plat h4:after, .book-a-table .plats .prices div .plat .h4:after, .gallerys .plats .prices div .plat h4:after, .gallerys .plats .prices div .plat .h4:after, .our-chefs .plats .prices div .plat h4:after, .our-chefs .plats .prices div .plat .h4:after {
   content: "............................................................";
 }
-.ourmenu .plats .prices div .plat span, .ourSpecials .plats .prices div .plat span, .book-a-table .plats .prices div .plat span, .gallerys .plats .prices div .plat span {
+.ourmenu .plats .prices div .plat span, .ourSpecials .plats .prices div .plat span, .book-a-table .plats .prices div .plat span, .gallerys .plats .prices div .plat span, .our-chefs .plats .prices div .plat span {
   color: #ffb03b;
   font-weight: 500;
 }
-.ourmenu .prices, .ourSpecials .prices, .book-a-table .prices, .gallerys .prices {
+.ourmenu .prices, .ourSpecials .prices, .book-a-table .prices, .gallerys .prices, .our-chefs .prices {
   display: block;
 }
-.ourmenu #check1:checked ~ .checked1, .ourSpecials #check1:checked ~ .checked1, .book-a-table #check1:checked ~ .checked1, .gallerys #check1:checked ~ .checked1 {
+.ourmenu #check1:checked ~ .checked1, .ourSpecials #check1:checked ~ .checked1, .book-a-table #check1:checked ~ .checked1, .gallerys #check1:checked ~ .checked1, .our-chefs #check1:checked ~ .checked1 {
   display: none;
 }
-.ourmenu #check1:checked ~ .checked3, .ourSpecials #check1:checked ~ .checked3, .book-a-table #check1:checked ~ .checked3, .gallerys #check1:checked ~ .checked3 {
+.ourmenu #check1:checked ~ .checked3, .ourSpecials #check1:checked ~ .checked3, .book-a-table #check1:checked ~ .checked3, .gallerys #check1:checked ~ .checked3, .our-chefs #check1:checked ~ .checked3 {
   display: none;
 }
-.ourmenu #check1:checked ~ .checked5, .ourSpecials #check1:checked ~ .checked5, .book-a-table #check1:checked ~ .checked5, .gallerys #check1:checked ~ .checked5 {
+.ourmenu #check1:checked ~ .checked5, .ourSpecials #check1:checked ~ .checked5, .book-a-table #check1:checked ~ .checked5, .gallerys #check1:checked ~ .checked5, .our-chefs #check1:checked ~ .checked5 {
   display: none;
 }
-.ourmenu #check1:checked ~ .checked7, .ourSpecials #check1:checked ~ .checked7, .book-a-table #check1:checked ~ .checked7, .gallerys #check1:checked ~ .checked7 {
+.ourmenu #check1:checked ~ .checked7, .ourSpecials #check1:checked ~ .checked7, .book-a-table #check1:checked ~ .checked7, .gallerys #check1:checked ~ .checked7, .our-chefs #check1:checked ~ .checked7 {
   display: none;
 }
-.ourmenu #check1:checked ~ .checked8, .ourSpecials #check1:checked ~ .checked8, .book-a-table #check1:checked ~ .checked8, .gallerys #check1:checked ~ .checked8 {
+.ourmenu #check1:checked ~ .checked8, .ourSpecials #check1:checked ~ .checked8, .book-a-table #check1:checked ~ .checked8, .gallerys #check1:checked ~ .checked8, .our-chefs #check1:checked ~ .checked8 {
   display: none;
 }
-.ourmenu #check1:checked ~ .checked9, .ourSpecials #check1:checked ~ .checked9, .book-a-table #check1:checked ~ .checked9, .gallerys #check1:checked ~ .checked9 {
+.ourmenu #check1:checked ~ .checked9, .ourSpecials #check1:checked ~ .checked9, .book-a-table #check1:checked ~ .checked9, .gallerys #check1:checked ~ .checked9, .our-chefs #check1:checked ~ .checked9 {
   display: none;
 }
-.ourmenu #check2:checked ~ .checked2, .ourSpecials #check2:checked ~ .checked2, .book-a-table #check2:checked ~ .checked2, .gallerys #check2:checked ~ .checked2 {
+.ourmenu #check2:checked ~ .checked2, .ourSpecials #check2:checked ~ .checked2, .book-a-table #check2:checked ~ .checked2, .gallerys #check2:checked ~ .checked2, .our-chefs #check2:checked ~ .checked2 {
   display: none;
 }
-.ourmenu #check2:checked ~ .checked4, .ourSpecials #check2:checked ~ .checked4, .book-a-table #check2:checked ~ .checked4, .gallerys #check2:checked ~ .checked4 {
+.ourmenu #check2:checked ~ .checked4, .ourSpecials #check2:checked ~ .checked4, .book-a-table #check2:checked ~ .checked4, .gallerys #check2:checked ~ .checked4, .our-chefs #check2:checked ~ .checked4 {
   display: none;
 }
-.ourmenu #check2:checked ~ .checked5, .ourSpecials #check2:checked ~ .checked5, .book-a-table #check2:checked ~ .checked5, .gallerys #check2:checked ~ .checked5 {
+.ourmenu #check2:checked ~ .checked5, .ourSpecials #check2:checked ~ .checked5, .book-a-table #check2:checked ~ .checked5, .gallerys #check2:checked ~ .checked5, .our-chefs #check2:checked ~ .checked5 {
   display: none;
 }
-.ourmenu #check2:checked ~ .checked6, .ourSpecials #check2:checked ~ .checked6, .book-a-table #check2:checked ~ .checked6, .gallerys #check2:checked ~ .checked6 {
+.ourmenu #check2:checked ~ .checked6, .ourSpecials #check2:checked ~ .checked6, .book-a-table #check2:checked ~ .checked6, .gallerys #check2:checked ~ .checked6, .our-chefs #check2:checked ~ .checked6 {
   display: none;
 }
-.ourmenu #check2:checked ~ .checked8, .ourSpecials #check2:checked ~ .checked8, .book-a-table #check2:checked ~ .checked8, .gallerys #check2:checked ~ .checked8 {
+.ourmenu #check2:checked ~ .checked8, .ourSpecials #check2:checked ~ .checked8, .book-a-table #check2:checked ~ .checked8, .gallerys #check2:checked ~ .checked8, .our-chefs #check2:checked ~ .checked8 {
   display: none;
 }
-.ourmenu #check2:checked ~ .checked9, .ourSpecials #check2:checked ~ .checked9, .book-a-table #check2:checked ~ .checked9, .gallerys #check2:checked ~ .checked9 {
+.ourmenu #check2:checked ~ .checked9, .ourSpecials #check2:checked ~ .checked9, .book-a-table #check2:checked ~ .checked9, .gallerys #check2:checked ~ .checked9, .our-chefs #check2:checked ~ .checked9 {
   display: none;
 }
-.ourmenu #check3:checked ~ .checked1, .ourSpecials #check3:checked ~ .checked1, .book-a-table #check3:checked ~ .checked1, .gallerys #check3:checked ~ .checked1 {
+.ourmenu #check3:checked ~ .checked1, .ourSpecials #check3:checked ~ .checked1, .book-a-table #check3:checked ~ .checked1, .gallerys #check3:checked ~ .checked1, .our-chefs #check3:checked ~ .checked1 {
   display: none;
 }
-.ourmenu #check3:checked ~ .checked2, .ourSpecials #check3:checked ~ .checked2, .book-a-table #check3:checked ~ .checked2, .gallerys #check3:checked ~ .checked2 {
+.ourmenu #check3:checked ~ .checked2, .ourSpecials #check3:checked ~ .checked2, .book-a-table #check3:checked ~ .checked2, .gallerys #check3:checked ~ .checked2, .our-chefs #check3:checked ~ .checked2 {
   display: none;
 }
-.ourmenu #check3:checked ~ .checked3, .ourSpecials #check3:checked ~ .checked3, .book-a-table #check3:checked ~ .checked3, .gallerys #check3:checked ~ .checked3 {
+.ourmenu #check3:checked ~ .checked3, .ourSpecials #check3:checked ~ .checked3, .book-a-table #check3:checked ~ .checked3, .gallerys #check3:checked ~ .checked3, .our-chefs #check3:checked ~ .checked3 {
   display: none;
 }
-.ourmenu #check3:checked ~ .checked4, .ourSpecials #check3:checked ~ .checked4, .book-a-table #check3:checked ~ .checked4, .gallerys #check3:checked ~ .checked4 {
+.ourmenu #check3:checked ~ .checked4, .ourSpecials #check3:checked ~ .checked4, .book-a-table #check3:checked ~ .checked4, .gallerys #check3:checked ~ .checked4, .our-chefs #check3:checked ~ .checked4 {
   display: none;
 }
-.ourmenu #check3:checked ~ .checked6, .ourSpecials #check3:checked ~ .checked6, .book-a-table #check3:checked ~ .checked6, .gallerys #check3:checked ~ .checked6 {
+.ourmenu #check3:checked ~ .checked6, .ourSpecials #check3:checked ~ .checked6, .book-a-table #check3:checked ~ .checked6, .gallerys #check3:checked ~ .checked6, .our-chefs #check3:checked ~ .checked6 {
   display: none;
 }
-.ourmenu #check3:checked ~ .checked7, .ourSpecials #check3:checked ~ .checked7, .book-a-table #check3:checked ~ .checked7, .gallerys #check3:checked ~ .checked7 {
+.ourmenu #check3:checked ~ .checked7, .ourSpecials #check3:checked ~ .checked7, .book-a-table #check3:checked ~ .checked7, .gallerys #check3:checked ~ .checked7, .our-chefs #check3:checked ~ .checked7 {
   display: none;
 }
-.ourmenu .sld, .ourSpecials .sld, .book-a-table .sld, .gallerys .sld {
+.ourmenu .sld, .ourSpecials .sld, .book-a-table .sld, .gallerys .sld, .our-chefs .sld {
   display: none;
 }
 
@@ -12460,7 +12460,102 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10.5px;
+  gap: 5px;
+}
+.gallerys .photos div:hover img {
+  transform: scale(1.1);
+}
+.gallerys .photos div img {
+  transition: 1s ease;
+}
+.gallerys .photos div {
+  overflow: hidden;
+}
+
+.ourChefs {
+  width: 100%;
+  height: 80vh;
+  margin-top: 20vh;
+}
+.ourChefs .parent-chef {
+  height: 95vh;
+}
+.ourChefs .parent-chef .profesional-chefs {
+  width: 400px;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef {
+  position: relative;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .chef img {
+  width: 400px;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information {
+  position: absolute;
+  right: 25px;
+  top: 55vh;
+  background: #ffffff;
+  width: 25vw;
+  padding: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information h6, .ourChefs .parent-chef .profesional-chefs .img-chef .information .h6 {
+  position: relative;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information h6::after, .ourChefs .parent-chef .profesional-chefs .img-chef .information .h6::after {
+  position: absolute;
+  content: "";
+  width: 4vw;
+  height: 1px;
+  background: rgba(113, 112, 112, 0.831372549);
+  top: 25px;
+  left: 0;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information .role {
+  display: flex;
+  justify-content: space-between;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information .role p {
+  color: #717070;
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information .role .social-chef {
+  color: rgba(155, 153, 153, 0.7921568627);
+}
+.ourChefs .parent-chef .profesional-chefs .img-chef .information .role .social-chef i:hover {
+  color: #ffb03b;
+}
+
+.ourChefs .carousel-chefs .slide {
+  background-image: url("../images/img/testimonials-bg.jpg");
+  margin-top: 20vh;
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.ourChefs .carousel-chefs .slide .carousel-inner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+}
+.ourChefs .carousel-chefs .slide .carousel-inner .carousel-item {
+  position: absolute;
+  top: 65vh;
+  left: 6vw;
+  width: 85vw;
+}
+.ourChefs .carousel-chefs .slide .carousel-inner .carousel-item .carousel-caption {
+  color: #000;
+  z-index: 99999999;
+  background-color: red;
+}
+.ourChefs .carousel-chefs .slide .carousel-inner .carousel-item .d-block {
+  position: absolute;
+  bottom: 40vh;
+  right: 40vw;
+  width: 80px;
+  border-radius: 50%;
+  border: 5px #080808;
 }
 
 /*# sourceMappingURL=app.css.map */

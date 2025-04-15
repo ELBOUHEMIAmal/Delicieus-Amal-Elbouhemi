@@ -15,8 +15,8 @@
     .slide
         position: absolute
         top: 10px
-        .carousel-indicators 
-            bottom: -37px 
+        .carousel-indicators
+            bottom: -37px
         .carousel-indicators [data-bs-target]
             box-sizing: content-box
             flex: 0 1 auto
@@ -53,26 +53,26 @@
                             font-family: "Pacifico", cursive
                             font-weight: 300
                         .price
-                            border-bottom: 1px solid   #ffb03b
-                            width: fit-content 
+                            border-bottom: 1px solid #ffb03b
+                            width: fit-content
                             height: fit-content
                             span
                                 color: #fff7eb
                                 font-size: 20px
                                 font-weight: 500
                         p
-                             color:#fff7eb
+                            color: #fff7eb
                         ul
-                            li 
+                            li
                                 list-style: none
-                                color:#fff7eb
+                                color: #fff7eb
                                 i
                                     color: #ffb03b
-             
+
 .book-a-table
-    margin-top: 20vh  
+    margin-top: 20vh
     .send-message
-        background-color:  #f9f9f9
+        background-color: #f9f9f9
         height: 80vh
         display: flex
         justify-content: center
@@ -89,14 +89,14 @@
                 border: none
                 border-radius: 10px
                 height: fit-content
-                background:#ffb03b
+                background: #ffb03b
                 color: white
                 width: fit-content
             form
                 display: flex
                 flex-direction: column
                 gap: 3vh
-                
+
                 .inputs
                     display: flex
                     flex-direction: column
@@ -119,7 +119,6 @@
                 textarea
                     padding: 15px
 
-
 .gallerys
     margin-top: 20vh
 
@@ -128,4 +127,92 @@
         flex-wrap: wrap
         justify-content: center
         align-items: center
-        gap: 10.5px
+        gap: 5px
+        div
+            &:hover
+                img
+                    transform: scale(1.1)
+        div img
+                    transition: 1s ease
+        div
+            overflow: hidden
+
+.ourChefs
+    width: 100%
+    height: 80vh
+    margin-top: 20vh
+    .parent-chef
+        height: 95vh
+
+        .profesional-chefs
+            width: 400px
+
+            .img-chef
+                position: relative
+                .chef
+                    img
+                        width: 400px
+                .information
+                    position: absolute
+                    right: 25px
+                    top: 55vh
+                    background: #ffffff
+                    width: 25vw
+                    padding: 12px
+                    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px
+                    h6
+                        position: relative
+                        &::after
+                            position: absolute
+                            content: ''
+                            width: 4vw
+                            height: 1px
+                            background: #717070d4
+                            top: 25px
+                            left: 0
+                    .role
+                        display: flex
+                        justify-content: space-between
+                        p
+                            color: #717070
+                        .social-chef
+                            color: #9b9999ca
+                            i
+                                &:hover
+                                    color: #ffb03b
+.ourChefs
+    .carousel-chefs
+
+        // .opacity2
+        //     background: #00000019
+        //     width: 100%
+        //     height: 80vh
+        //     opacity: 0.5
+        .slide
+            background-image: url('../images/img/testimonials-bg.jpg')
+            margin-top: 20vh
+            width: 100%
+            height: 80vh
+            background-size: cover
+            background-position: center
+            position: relative
+            .carousel-inner
+                position: relative
+                width: 100%
+                height: 80vh
+                .carousel-item
+                    position: absolute
+                    top: 65vh
+                    left: 6vw
+                    width: 85vw
+                    .carousel-caption
+                        color: #000
+                        z-index: 99999999
+                        background-color: red
+                    .d-block
+                        position: absolute
+                        bottom: 40vh
+                        right: 40vw
+                        width: 80px
+                        border-radius: 50%
+                        border: 5px #080808
