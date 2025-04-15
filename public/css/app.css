@@ -11964,6 +11964,10 @@ textarea.form-control-lg {
   z-index: 9999;
 }
 
+section {
+  margin-top: 5vh;
+}
+
 .aboutus {
   display: flex;
   justify-content: center;
@@ -12055,7 +12059,7 @@ textarea.form-control-lg {
   color: white;
 }
 
-.ourmenu {
+.ourmenu, .ourSpecials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12064,7 +12068,7 @@ textarea.form-control-lg {
   width: 100%;
   height: 80vh;
 }
-.ourmenu .border-why {
+.ourmenu .border-why, .ourSpecials .border-why {
   border-radius: 20px;
   background: #fff7eb;
   padding: 5px 15px;
@@ -12072,35 +12076,233 @@ textarea.form-control-lg {
   color: #ffb03b;
   font-weight: 500;
 }
-.ourmenu .ourRestaurant h2, .ourmenu .ourRestaurant .h2 {
+.ourmenu .ourRestaurant h2, .ourmenu .ourRestaurant .h2, .ourSpecials .ourRestaurant h2, .ourSpecials .ourRestaurant .h2 {
   font-family: "Pacifico", cursive;
 }
-.ourmenu .ourRestaurant h2 span, .ourmenu .ourRestaurant .h2 span {
+.ourmenu .ourRestaurant h2 span, .ourmenu .ourRestaurant .h2 span, .ourSpecials .ourRestaurant h2 span, .ourSpecials .ourRestaurant .h2 span {
   color: #ffb03b;
 }
-.ourmenu .categorie ul {
+.ourmenu .categorie ul, .ourSpecials .categorie ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5vw;
+  gap: 3vw;
 }
-.ourmenu .categorie ul li {
+.ourmenu .categorie ul li, .ourSpecials .categorie ul li {
   list-style: none;
 }
-.ourmenu .plats {
+.ourmenu .categorie ul li:hover, .ourSpecials .categorie ul li:hover {
+  color: #ffb03b;
+}
+.ourmenu .plats, .ourSpecials .plats {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 5vw;
+  gap: 3vw;
 }
-.ourmenu .plats .plat {
+.ourmenu .plats .prices, .ourSpecials .plats .prices {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.ourmenu .plats .plat img {
-  width: 50px;
+.ourmenu .plats .prices .img, .ourSpecials .plats .prices .img {
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid #f9f9f9;
+}
+.ourmenu .plats .prices div .plat, .ourSpecials .plats .prices div .plat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ourmenu .plats .prices div .plat h4:after, .ourmenu .plats .prices div .plat .h4:after, .ourSpecials .plats .prices div .plat h4:after, .ourSpecials .plats .prices div .plat .h4:after {
+  content: "............................................................";
+}
+.ourmenu .plats .prices div .plat span, .ourSpecials .plats .prices div .plat span {
+  color: #ffb03b;
+  font-weight: 500;
+}
+.ourmenu .prices, .ourSpecials .prices {
+  display: block;
+}
+.ourmenu #check1:checked ~ .checked1, .ourSpecials #check1:checked ~ .checked1 {
+  display: none;
+}
+.ourmenu #check1:checked ~ .checked3, .ourSpecials #check1:checked ~ .checked3 {
+  display: none;
+}
+.ourmenu #check1:checked ~ .checked5, .ourSpecials #check1:checked ~ .checked5 {
+  display: none;
+}
+.ourmenu #check1:checked ~ .checked7, .ourSpecials #check1:checked ~ .checked7 {
+  display: none;
+}
+.ourmenu #check1:checked ~ .checked8, .ourSpecials #check1:checked ~ .checked8 {
+  display: none;
+}
+.ourmenu #check1:checked ~ .checked9, .ourSpecials #check1:checked ~ .checked9 {
+  display: none;
+}
+.ourmenu #check2:checked ~ .checked2, .ourSpecials #check2:checked ~ .checked2 {
+  display: none;
+}
+.ourmenu #check2:checked ~ .checked4, .ourSpecials #check2:checked ~ .checked4 {
+  display: none;
+}
+.ourmenu #check2:checked ~ .checked5, .ourSpecials #check2:checked ~ .checked5 {
+  display: none;
+}
+.ourmenu #check2:checked ~ .checked6, .ourSpecials #check2:checked ~ .checked6 {
+  display: none;
+}
+.ourmenu #check2:checked ~ .checked8, .ourSpecials #check2:checked ~ .checked8 {
+  display: none;
+}
+.ourmenu #check2:checked ~ .checked9, .ourSpecials #check2:checked ~ .checked9 {
+  display: none;
+}
+.ourmenu #check3:checked ~ .checked1, .ourSpecials #check3:checked ~ .checked1 {
+  display: none;
+}
+.ourmenu #check3:checked ~ .checked2, .ourSpecials #check3:checked ~ .checked2 {
+  display: none;
+}
+.ourmenu #check3:checked ~ .checked3, .ourSpecials #check3:checked ~ .checked3 {
+  display: none;
+}
+.ourmenu #check3:checked ~ .checked4, .ourSpecials #check3:checked ~ .checked4 {
+  display: none;
+}
+.ourmenu #check3:checked ~ .checked6, .ourSpecials #check3:checked ~ .checked6 {
+  display: none;
+}
+.ourmenu #check3:checked ~ .checked7, .ourSpecials #check3:checked ~ .checked7 {
+  display: none;
+}
+.ourmenu input, .ourSpecials input {
+  display: none;
+}
+
+.OurSpecials {
+  margin-top: 10vh;
+  height: 80vh;
+  row-gap: 5vh;
+}
+.OurSpecials .border-why {
+  border-radius: 20px;
+  background: #fff7eb;
+  padding: 5px 15px;
+  width: fit-content;
+  color: #ffb03b;
+  font-weight: 500;
+}
+.OurSpecials .ourRestaurant h2, .OurSpecials .ourRestaurant .h2 {
+  font-family: "Pacifico", cursive;
+}
+.OurSpecials .ourRestaurant h2 span, .OurSpecials .ourRestaurant .h2 span {
+  color: #ffb03b;
+}
+
+.plats {
+  display: grid;
+  grid-template-columns: 30% 60%;
+}
+
+.plat1 {
+  display: flex;
+  justify-content: start;
+  border-right: 2px solid #ffb03b;
+  width: 25vw;
+  height: 9vh;
+  cursor: pointer;
+}
+.plat1 p {
+  font-weight: bold;
+}
+
+.plat2, .plat3, .plat4, .plat5 {
+  display: flex;
+  justify-content: start;
+  border-right: 2px solid #ececec;
+  width: 25vw;
+  height: 9vh;
+  cursor: pointer;
+}
+.plat2 p, .plat3 p, .plat4 p, .plat5 p {
+  font-weight: bold;
+}
+
+.plat2:hover p, .plat3:hover p, .plat4:hover p, .plat5:hover p {
+  color: #ffb03b;
+}
+
+.disc1 h1, .disc1 .h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.disc1 p {
+  font-style: italic;
+  color: #77756e;
+  width: 41vw;
+}
+.disc1 img {
+  width: 45vw;
+  height: 45vh;
+}
+
+.disc-plat {
+  position: relative;
+}
+.disc-plat div h1, .disc-plat div .h1 {
+  font-family: "Pacifico", cursive;
+}
+
+.disc2, .disc3, .disc4, .disc5 {
+  position: absolute;
+  right: 94vw;
+}
+.disc2 h1, .disc2 .h1, .disc3 h1, .disc3 .h1, .disc4 h1, .disc4 .h1, .disc5 h1, .disc5 .h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.disc2 p, .disc3 p, .disc4 p, .disc5 p {
+  font-style: italic;
+  color: #77756e;
+  width: 41vw;
+}
+.disc2 img, .disc3 img, .disc4 img, .disc5 img {
+  width: 45vw;
+  height: 45vh;
+}
+
+.chek2 {
+  display: none;
+}
+
+.plat2:active, .plat3:active, .plat4:active, .plat5:active {
+  border-right: 2px solid #ffb03b;
+}
+
+#plat2-check:checked + .disc2, #disc2-check1:checked + .disc3, #plat2-check2:checked + .disc4, #plat2-check3:checked + .disc5 {
+  top: 0vh;
+  left: 29.6vw;
+}
+
+#plat2-check:checked + .disc2 .disc2-title {
+  background-color: white;
+}
+
+#plat2-check1:checked + .disc3 .disc3-title {
+  background-color: white;
+}
+
+#plat2-check2:checked + .disc4 .disc4-title {
+  background-color: white;
+}
+
+#plat2-check3:checked + .disc5 .disc5-title {
+  background-color: white;
 }
 
 /*# sourceMappingURL=app.css.map */

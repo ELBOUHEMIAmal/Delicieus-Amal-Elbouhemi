@@ -1,4 +1,13 @@
-.ourmenu
+@mixin left()
+    display: flex
+    justify-content: start
+    border-right: 2px solid #ececec
+    width: 25vw
+    height: 9vh
+    cursor: pointer
+    p
+        font-weight: bold
+.ourmenu, .ourSpecials
     @include display(center)  
     flex-direction: column 
     row-gap: 5vh    
@@ -19,16 +28,179 @@
     .categorie
         ul
             @include display(center)
-            gap: 5vw
+            gap: 3vw
             li
                 list-style: none
+                &:hover
+                    color: #ffb03b
     .plats
         @include display(center)
         flex-wrap: wrap
-        gap: 5vw
-        .plat
+        gap: 3vw
+        .prices
             @include display(center)
-            img
-                width: 50px
+            .img
+                width: 60px
+                border-radius: 50%
+                border: 5px solid #f9f9f9
+            div
+                .plat
+                    @include display(center)
+                    h4:after
+                        content: '............................................................'
+                    span
+                        color: #ffb03b
+                        font-weight: 500 
+   
+    .prices
+        display: block
+    #check1 
+        &:checked ~ .checked1
+            display: none
+    #check1
+        &:checked ~ .checked3
+            display: none
+    #check1
+        &:checked ~ .checked5
+            display: none
+    #check1
+        &:checked ~ .checked7
+            display: none
+    #check1
+        &:checked ~ .checked8
+            display: none
+    #check1
+        &:checked ~ .checked9
+            display: none
+    
             
-            
+
+    #check2
+        &:checked ~  .checked2
+            display: none
+    #check2
+        &:checked ~  .checked4
+            display: none
+    #check2
+        &:checked ~  .checked5
+            display: none
+    #check2
+        &:checked ~  .checked6
+            display: none
+    #check2
+        &:checked ~  .checked8
+            display: none
+    #check2
+        &:checked ~  .checked9
+            display: none
+
+    #check3
+        &:checked ~ .checked1
+            display: none
+
+    #check3
+        &:checked ~ .checked2
+            display: none
+    #check3
+        &:checked ~ .checked3
+            display: none
+    #check3
+        &:checked ~ .checked4
+            display: none
+    #check3
+        &:checked ~ .checked6
+            display: none
+    #check3
+        &:checked ~ .checked7
+            display: none
+    input
+        display: none
+
+.OurSpecials
+    margin-top: 10vh
+    height: 80vh
+    row-gap: 5vh
+    .border-why
+        border-radius: 20px
+        background: #fff7eb
+        padding: 5px 15px
+        width: fit-content
+        color: #ffb03b
+        font-weight: 500
+    .ourRestaurant
+        h2
+            font-family: "Pacifico", cursive
+            span
+                color: #ffb03b
+
+.plats
+    display: grid
+    grid-template-columns: 30% 60%
+
+.plat1
+    display: flex
+    justify-content: start
+    border-right: 2px solid #ffb03b
+    width: 25vw
+    height: 9vh
+    cursor: pointer
+    p
+        font-weight: bold
+.plat2, .plat3, .plat4, .plat5
+    @include left()
+.plat2, .plat3, .plat4, .plat5
+    &:hover
+        p
+            color: #ffb03b
+.disc1
+    h1
+        font-size: 30px
+        font-weight: bold
+    p
+        font-style: italic
+        color: #77756e
+        width: 41vw
+    img
+        width: 45vw
+        height: 45vh
+.disc-plat
+    position: relative
+    div
+        h1
+            font-family: "Pacifico", cursive
+.disc2, .disc3, .disc4, .disc5
+    
+    
+    position: absolute
+    right: 94vw
+    h1
+        font-size: 30px
+        font-weight: bold
+    p
+        font-style: italic
+        color: #77756e
+        width: 41vw
+    img
+        width: 45vw
+        height: 45vh
+.chek2
+    display: none
+.plat2, .plat3, .plat4, ,.plat5
+    &:active
+        border-right: 2px solid #ffb03b
+
+#plat2-check:checked +.disc2, #disc2-check1:checked +.disc3, #plat2-check2:checked +.disc4, #plat2-check3:checked +.disc5 
+    top: 0vh
+    left:29.6vw
+#plat2-check:checked +.disc2
+    .disc2-title
+        background-color: white
+#plat2-check1:checked +.disc3
+    .disc3-title
+        background-color: white
+#plat2-check2:checked +.disc4
+    .disc4-title
+        background-color: white
+#plat2-check3:checked +.disc5
+    .disc5-title
+        background-color: white
