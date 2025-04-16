@@ -7,12 +7,12 @@
     cursor: pointer
     p
         font-weight: bold
-.ourmenu, .ourSpecials, .book-a-table, .gallerys, .our-chefs
+.title
     @include display(center)  
     flex-direction: column 
     row-gap: 5vh    
     width: 100%
-    height: 80vh
+    height: 50vh
     .border-why
         border-radius: 20px
         background: #fff7eb
@@ -25,6 +25,7 @@
             font-family: "Pacifico", cursive
             span
                 color: #ffb03b
+.ourmenu
     .categorie
         ul
             @include display(center)
@@ -117,7 +118,6 @@
         display: none
 
 .OurSpecials
-    margin-top: 10vh
     height: 80vh
     row-gap: 5vh
     .border-why
