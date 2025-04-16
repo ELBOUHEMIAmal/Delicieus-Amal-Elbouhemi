@@ -196,6 +196,24 @@
             background-size: cover
             background-position: center
             position: relative
+            .carousel-indicators [data-bs-target]
+                box-sizing: content-box
+                flex: 0 1 auto
+                width: 30px
+                height: 3px
+                padding: 0
+                margin-right: 3px
+                margin-left: 3px
+                text-indent: -999px
+                cursor: pointer
+                background-color: #ffb03b
+                border: 0
+                border-radius: 50%
+                height: 10px
+                width: 10px
+                transition: opacity 0.6s ease
+            .carousel-control-prev, .carousel-control-next
+                display: none
             .carousel-inner
                 position: relative
                 width: 100%
@@ -208,11 +226,27 @@
                     .carousel-caption
                         color: #000
                         z-index: 99999999
-                        background-color: red
+                        h3
+                            color: white
+                            font-family: "Pacifico", cursive
+                        h4
+                            font-family: "Pacifico", cursive
+                            color: #9c9999
+                            font-size: 15px
+                        .stars
+                            i
+                                color: #ffc107
+                        p
+                            i
+                                color: #9c9999
+                            span
+                                color: white
+                                font-style: italic
                     .d-block
                         position: absolute
                         bottom: 40vh
                         right: 40vw
-                        width: 80px
+                        width: 100px
                         border-radius: 50%
-                        border: 5px #080808
+                        border: 5px solid #ffffff54
+
