@@ -11909,6 +11909,14 @@ main {
   box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
 }
 
+.back-img {
+  width: 100vw;
+  height: 85vh;
+}
+.back-img [data-aos^=fade][data-aos^=fade] {
+  opacity: 1;
+  transition-property: opacity, transform;
+}
 .back-img .slide .carousel-control-prev, .back-img .slide .carousel-control-next {
   z-index: 9999;
 }
@@ -11916,10 +11924,9 @@ main {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-  position: relative;
 }
 .back-img .slide .carousel-inner .carousel-item .carousel-caption {
-  z-index: 9999;
+  z-index: 999999;
   position: absolute;
   top: 40vh;
   left: 34vw;
@@ -11927,6 +11934,7 @@ main {
   width: 33vw;
 }
 .back-img .slide .carousel-inner .carousel-item .carousel-caption p {
+  color: white;
   text-align: start;
 }
 .back-img .slide .carousel-inner .carousel-item .carousel-caption h2, .back-img .slide .carousel-inner .carousel-item .carousel-caption .h2 {
@@ -11958,16 +11966,179 @@ main {
   position: absolute;
   bottom: 5vh;
 }
-.back-img .opacity {
-  background: #000000;
-  width: 100%;
-  height: 100vh;
-  opacity: 0.5;
-  position: absolute;
-  top: 0;
-  z-index: 9999;
+
+.menu, .checkbox, .close {
+  display: none;
 }
 
+.opacity3 {
+  display: none;
+}
+
+.nav-respo {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .nav-desk {
+    position: relative;
+  }
+  .nav-desk .list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    width: 70vw;
+    height: 40vh;
+    padding: 20px 0;
+    border-radius: 5px;
+    top: 0vh;
+    right: -300px;
+    background-color: white;
+    z-index: 999999999;
+    overflow: scroll;
+  }
+  .nav-desk .list ul {
+    gap: 2vh !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-desk .list ul li a {
+    color: black;
+    font-size: 20px;
+  }
+  .nav-desk .menu {
+    color: white;
+    position: relative;
+    display: block;
+  }
+  .nav-desk .close {
+    display: block;
+    color: black;
+    position: absolute;
+    top: 5vh;
+    right: 5px;
+  }
+  .nav-desk nav:after {
+    background-color: rgba(207, 206, 206, 0);
+  }
+  #menu:checked ~ .list {
+    right: 15vw;
+    top: 10vh;
+  }
+  #menu:checked ~ .opacity3 {
+    position: absolute;
+    top: 0vh;
+    left: -26px;
+    opacity: 0.8;
+    z-index: 9999999;
+    background: #000;
+    width: 107vw;
+    height: 100vh;
+    display: block;
+  }
+  .carousel-inner .carousel-item .d-block {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+  }
+  .carousel-inner .carousel-item .d-block .buttons a {
+    padding: 0 50px !important;
+    width: 100% !important;
+  }
+  .carousel-inner .carousel-item .d-block .carousel-caption {
+    z-index: 9999;
+    position: absolute;
+    top: 40vh;
+    left: 34vw;
+    transform: translate(10px, 10px);
+    width: 33vw;
+    display: block;
+  }
+  .aboutus {
+    height: 120vh !important;
+    padding-top: 20px;
+    flex-direction: column !important;
+  }
+  .aboutus .video .video-position img {
+    width: 400px !important;
+  }
+  .aboutus .disc-video {
+    padding-left: 10px;
+    height: 100%;
+    width: 100vw !important;
+    text-align: left !important;
+  }
+  .whyUs {
+    margin-top: 25vh;
+    height: 119vh !important;
+  }
+  .whyUs .content {
+    flex-direction: column !important;
+  }
+  .whyUs .content div {
+    width: 85vw !important;
+  }
+  .plats .prices div .plat h4, .plats .prices div .plat .h4 {
+    text-align: left !important;
+  }
+  .plats .prices div .plat h4::after, .plats .prices div .plat .h4::after {
+    content: ".............." !important;
+  }
+  .OurSpecials {
+    width: 100% !important;
+    height: 150vh !important;
+  }
+  .plats {
+    display: unset !important;
+    grid-template-columns: 0;
+    width: 100% !important;
+  }
+  .plats .name-plat {
+    border: none;
+  }
+  .plats .name-plat .plat1, .plats .name-plat .plat2, .plats .name-plat .plat3, .plats .name-plat .plat4, .plats .name-plat .plat5 {
+    border: none;
+    width: 50vw;
+  }
+  .plats .disc-plat {
+    width: 100% !important;
+  }
+  .plats .disc-plat .disc1, .plats .disc-plat .disc2, .plats .disc-plat .disc3, .plats .disc-plat .disc4, .plats .disc-plat .disc5 {
+    flex-direction: column !important;
+  }
+  .plats .disc-plat .disc1 div p, .plats .disc-plat .disc2 div p, .plats .disc-plat .disc3 div p, .plats .disc-plat .disc4 div p, .plats .disc-plat .disc5 div p {
+    width: 85vw;
+  }
+  .plats .disc-plat .disc1 div .h1, .plats .disc-plat .disc2 div .h1, .plats .disc-plat .disc3 div .h1, .plats .disc-plat .disc4 div .h1, .plats .disc-plat .disc5 div .h1 {
+    font-size: 25px !important;
+    width: 50vw;
+  }
+  .plats .disc-plat .gap-5 {
+    gap: 0;
+  }
+  .ourEvent {
+    margin-top: 30vh;
+    width: 100%;
+    height: 40vh;
+  }
+  .ourEvent .slide .carousel-inner .carousel-item {
+    flex-direction: column;
+  }
+  .ourEvent .slide .carousel-inner .carousel-item .d-block {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 19vh;
+  }
+  .book-a-table .send-message .submitmsg form .inputs .top-inputs {
+    display: flex;
+    flex-direction: column !important;
+    gap: 3vh;
+  }
+}
 .aboutus {
   display: flex;
   justify-content: center;
@@ -12599,6 +12770,9 @@ main {
 .contactUs .map {
   width: 100%;
 }
+.contactUs .map iframe {
+  width: 100%;
+}
 .contactUs .contact {
   display: flex;
   justify-content: center;
@@ -12677,6 +12851,15 @@ main {
 }
 .contactUs .contact .touch .callus .d-flex div p {
   color: #828080;
+}
+
+body {
+  position: relative;
+}
+body footer {
+  position: absolute;
+  bottom: 0;
+  background: #000;
 }
 
 /*# sourceMappingURL=app.css.map */
